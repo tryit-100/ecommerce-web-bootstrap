@@ -15,7 +15,7 @@
 <body>
     <header>
         <!-- navigation bar -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
             <div class="container">
                 <a class="navbar-brand" href="#">
                     <img src="images/logo.png" alt="" class="d-inline-block align-text-top">
@@ -30,13 +30,13 @@
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Shoes</a>
+                            <a class="nav-link" href="#shoes">Shoes</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Backpack</a>
+                            <a class="nav-link" href="#backpack">Backpack</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Subscribe</a>
+                            <a class="nav-link" href="#subscribe">Subscribe</a>
                         </li>
                     </ul>
                 </div>
@@ -135,7 +135,7 @@
             </div>
         </section>
         <!-- Shoes section -->
-        <section class="container">
+        <section class="container" id="shoes">
             <h1>Shoes</h1>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 py-5">
                 <div class="col">
@@ -181,7 +181,7 @@
             </div>
         </section>
         <!-- Bags section -->
-        <section class="container">
+        <section class="container" id="backpack">
             <h1>Backpack</h1>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 py-5">
                 <div class="col">
@@ -227,19 +227,23 @@
             </div>
         </section>
         <!-- subscribe section -->
-        <section class="container">
-            <div class="d-flex justify-content-center align-items-center" style="background-color: #fceae8; height:300px;">
+        <section class="container" id="subscribe">
+            <div class="d-flex justify-content-center align-items-center"
+                style="background-color: #fceae8; height:300px;">
                 <div class="text-nowrap">
                     <h1>LET'S STAY IN TOUCH</h1>
                     <p>Get updates on sales, specials and more</p>
-                    <input type="email" class="form-control " id="exampleFormControlInput1" placeholder="Your Email"><br>
+                    <input type="email" class="form-control " id="exampleFormControlInput1"
+                        placeholder="Your Email"><br>
                     <button type="button" class="btn btn-danger">Buy Now</button>
                 </div>
             </div>
         </section>
     </main>
     <footer class="pt-5 text-center">
-        <small><p>©2025. Panda Commerce. All rights reserved. Sofia, Bulgaria.</p></small>
+        <small>
+            <p>©2025. Panda Commerce. All rights reserved. Sofia, Bulgaria.</p>
+        </small>
     </footer>
     <!-- Bootstrap Script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
